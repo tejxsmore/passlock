@@ -1,36 +1,52 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# PassLock - Password Manager
 
-## Getting Started
+PassLock is a password manager application built using Nextjs. It provides a secure and convenient way to store and manage your passwords, ensuring they are encrypted and easily accessible whenever you need them.
 
-First, run the development server:
+## Features
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+- Securely store and manage passwords
+- Encrypts sensitive data for enhanced security
+- Easy-to-use interface for managing passwords
+- Password generation feature for creating strong, unique passwords
+- Search functionality for quickly finding stored passwords
+- Backup and restore functionality to safeguard your data
+- Cross-platform support for seamless usage on various devices
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Installation
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+To install PassLock, follow these steps:
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+1. Clone this repository to your local machine.
+2. Install dependencies by running `npm install`.
+3. Configure your database connection settings in the `.env` file.
+4. Run the application using `npm start`.
 
-## Learn More
+## Usage
 
-To learn more about Next.js, take a look at the following resources:
+Once PassLock is running, you can access it through your web browser. From there, you can:
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+- Add new passwords: Click on the "Add Password" button to create a new entry and provide the necessary details.
+- View existing passwords: All stored passwords will be listed on the main interface, showing relevant details.
+- Edit passwords: Click on a password entry to edit its details.
+- Delete passwords: Remove unwanted entries by selecting them and clicking the "Delete" button.
+- Generate new passwords: Utilize the password generation feature to create strong, unique passwords.
+- Search for passwords: Use the search functionality to quickly find specific password entries.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+## Contributing
 
-## Deploy on Vercel
+Contributions are welcome! If you'd like to contribute to PassLock, please follow these steps:
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+1. Fork the repository.
+2. Create a new branch (`git checkout -b feature/your-feature`).
+3. Make your changes.
+4. Commit your changes (`git commit -am 'Add some feature'`).
+5. Push to the branch (`git push origin feature/your-feature`).
+6. Create a new Pull Request.
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+## License
+
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+
+## Contact
+
+If you have any questions or suggestions regarding PassLock, feel free to [contact us](mailto:passlock@example.com). We'd love to hear from you!
