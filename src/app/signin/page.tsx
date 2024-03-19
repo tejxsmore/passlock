@@ -1,10 +1,16 @@
 "use client";
 import { useState } from "react";
-import bcrypt from "bcrypt";
+const bcrypt = require("bcryptjs");
 
 export default function Signin() {
   const [email, setEmail] = useState("");
   const [pass, setPass] = useState("");
+
+  const hashPass = async (pass: string) => {
+    const saltRounds = 10;
+    const hash = await bcrypt.hash(pass, saltRounds);
+    setPass(hash);
+  };
 
   const handleSubmit = async (e: { preventDefault: () => void }) => {
     e.preventDefault();
@@ -52,7 +58,7 @@ export default function Signin() {
             required
             id="password"
             type="password"
-            onChange={(e) => setPass(e.target.value)}
+            onChange={(e) => hashPass(e.target.value)}
             className="p-2.5 rounded-lg bg-dark border border-pink focus:outline-none w-full"
           />
         </div>
