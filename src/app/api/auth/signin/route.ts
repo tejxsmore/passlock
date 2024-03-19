@@ -1,6 +1,7 @@
 import { NextResponse } from "next/server";
 import { neon } from "@neondatabase/serverless";
-const sql = neon(process.env.DATABASE_URL);
+const db = process.env.DATABASE_URL || "";
+const sql = neon(db);
 
 export async function POST(request: any) {
   const data = await request.json();
